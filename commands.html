@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML5 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS uiKit -->
+    <link rel="stylesheet" href="assets/uikit/css/uikit.css">
+    <!-- CSS uiKit-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom CSS -->
+    <link rel="icon" type="image/x-icon" href="assets/img/Rebrand-PGB.png">
+
+    <title> Póllo boat - The  Discord Bot to manage your server.</title>
+</head>
+<body >
+    
+    <!-- Custom Flexbox CSS navbar-->
+    <div class="uk-alert-primary" uk-alert style="height: auto;
+    text-align: center;
+    line-height: 48px;">
+        <p>We recently split the bot into two bots one for Economy and one for Moderation and Utility.</p>
+    </div>
+    <header class="ccss_navbar">
+        <!-- Branding -->
+        
+        <a href="index.html">
+            <img src="assets/img/Rebrand-PGB.png" alt="" class="brand" width="64px">
+    
+        </a>
+        
+        <!-- Branding -->
+    
+        <!--Links-->
+            <ul class="navbar_links">
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+                <li>
+                    <a href="commands.html">Commands</a>
+                </li>
+                <button class="uk-button uk-button-text" type="button" uk-icon="chevron-down">Resources</button>
+                <div uk-dropdown>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-nav-header">Community</li>
+                        <li><a href="https://discord.com/invite/mMp6Jp9pDk" style="color: #808080;">Server</a></li>
+                        <li><a href="https://discord.com/invite/za49CDfTdv" style="color: #808080;">Appeals Server</a></li>
+                        <li class="uk-nav-divider"></li>
+    
+                        <li class="uk-nav-header">Support me!</li>
+                        <li><a href="https://www.patreon.com/PolloGameBoat" style="color: #808080;">Donate</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-nav-header">Resources</li>
+                        <li><a href="privacy_policy.html"  style="color: #808080;">Privacy Policy</a></li>
+                        <li><a href="terms_of_service.html"  style="color: #808080;">terms of services</a></li>
+                        <li><a href="index.html#developers"  style="color: #808080;">Developers</a></li>
+                       
+                    </ul>
+                </div>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=815345379952033812&permissions=412320319553&scope=bot" class="uk-button uk-button-default ">Invite PólloEco</a></li>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=839397125846073394&permissions=1616924503158&scope=bot" class="uk-button uk-button-default ">Invite PólloMod</a></li>
+                <li><a href="https://dash.pollobot.xyz/" class="uk-button uk-button-primary" uk-icon="sign-in">Dashboard</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+    </header>
+
+
+    <!-- End -->
+
+    <div class="uk-container">
+        <hr class="divider">
+        <div class="uk-alert-success rounded-2" uk-alert>
+            <p><span uk-icon="check"></span> Póllo supports / commands!</p>
+        </div>
+        <h1>Póllo boat commands </h1>
+        <ul uk-accordion="multiple: true">
+            <li>
+                <a class="uk-accordion-title" href="#">Prefix</a>
+                <div class="uk-accordion-content">
+                    <p><div class="uk-alert-primary rounded-2" uk-alert><span uk-icon="info"></span> Bot's default prefix is PO!</div>
+                    PO!setprefix to change bot's default prefix.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">setchatfilter</a>
+                <div class="uk-accordion-content">
+                    <p>creates a Filter for channel moderation.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">ban</a>
+                <div class="uk-accordion-content">
+                    <p>Bans a user from your server</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">kick</a>
+                <div class="uk-accordion-content">
+                    <p>Kicks a user from your server</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">mute</a>
+                <div class="uk-accordion-content">
+                    <p>mute a member from your server</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">purge</a>
+                <div class="uk-accordion-content">
+                    <p>Purges your server.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">security</a>
+                <div class="uk-accordion-content">
+                    <p>Checks security levels on your server.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">setlinkfilter</a>
+                <div class="uk-accordion-content">
+                    <p>Creates A Custom Link filter for your chat.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Unban</a>
+                <div class="uk-accordion-content">
+                    <p>Unbans user from server.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">unmute</a>
+                <div class="uk-accordion-content">
+                    <p>Unmutes user from server.</p>
+                </div>
+            </li>
+            <hr>
+            <h1>Utility </h1>
+         
+          
+          
+         
+        </ul>
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title" href="#">chelp</a>
+                <div class="uk-accordion-content">
+                    <p>Brings Utility help menu.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">createbackup</a>
+                <div class="uk-accordion-content">
+                    <p>Creates A bot Backup.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">help</a>
+                <div class="uk-accordion-content">
+                    <p>Brings the help menu up.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">invites</a>
+                <div class="uk-accordion-content">
+                    <p>Server invites.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">loadbackup</a>
+                <div class="uk-accordion-content">
+                    <p>Load a server backup.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">ping</a>
+                <div class="uk-accordion-content">
+                    <p>checks ping status.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">serverinfo</a>
+                <div class="uk-accordion-content">
+                    <p>Server information.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">setleaveinfo</a>
+                <div class="uk-accordion-content">
+                    <p>Creates a New leave message module.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">setprefix</a>
+                <div class="uk-accordion-content">
+                    <p>Changes your default prefix</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">setwelcomeinfo</a>
+                <div class="uk-accordion-content">
+                    <p>Creates a new Welcome message module</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">whois</a>
+                <div class="uk-accordion-content">
+                    <p>Brings information about a certain user.</p>
+                </div>
+            </li>
+        </ul>  
+          <hr>
+         <h1>Póllo Game Boat Commands</h1>
+
+            <hr>
+
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title" href="#">bal</a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">beg</a>
+                <div class="uk-accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">buy</a>
+                <div class="uk-accordion-content">
+                    <p>Buy stuff.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">crime</a>
+                <div class="uk-accordion-content">
+                    <p>Make money illegally. you might get caught!</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">daily</a>
+                <div class="uk-accordion-content">
+                    <p>Ever wondered if someone gave you betweem 1 to 10 bucks a day?</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">dataremoval</a>
+                <div class="uk-accordion-content">
+                    <p>removes your data</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">deposit</a>
+                <div class="uk-accordion-content">
+                    <p>Deposit money from your balance</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">fish</a>
+                <div class="uk-accordion-content">
+                    <p>That's what they call "Wet money"</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">leaderboard</a>
+                <div class="uk-accordion-content">
+                    <p>brings up a leaderboard of the top richest members</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">pay</a>
+                <div class="uk-accordion-content">
+                    <p>pay people money.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">profile</a>
+                <div class="uk-accordion-content">
+                    <p>brings up your profile.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">sell</a>
+                <div class="uk-accordion-content">
+                    <p>Sell items.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">weekly</a>
+                <div class="uk-accordion-content">
+                    <p>get a legal salary per week.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">withdraw</a>
+                <div class="uk-accordion-content">
+                    <p>withdraw money to your bal.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">work</a>
+                <div class="uk-accordion-content">
+                    <p>Ever wondered of clean money?</p>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <h1>PólloGameBoat Utility</h1>
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title">help</a>
+                <div class="uk-accordion-content">
+                    <p>Brings up the help menu.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">ping</a>
+                <div class="uk-accordion-content">
+                    <p>Brings up the Bot status.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">privacy</a>
+                <div class="uk-accordion-content">
+                    <p>Brings up the Privacy menu.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">Setprefix</a>
+                <div class="uk-accordion-content">
+                    <p>Replace your own prefix instad of the default one.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">suggest</a>
+                <div class="uk-accordion-content">
+                    <p>Suggest something.</p>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <h1>PólloGameBoat Fun</h1>
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title">meme</a>
+                <div class="uk-accordion-content">
+                    <p>Brings up a meme.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">open</a>
+                <div class="uk-accordion-content">
+                    <p>Opens you a present!</p>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <h1>PólloGameBoat Other commands</h1>
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title">avatar</a>
+                <div class="uk-accordion-content">
+                    <p>Brings a user's avatar</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">communityserver</a>
+                <div class="uk-accordion-content">
+                    <p>Sends out an invitation link for the Official PólloGameBoat server.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">start-giveaway</a>
+                <div class="uk-accordion-content">
+                    <p>Start a giveaway.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">end-giveaway</a>
+                <div class="uk-accordion-content">
+                    <p>End a giveaway.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">info</a>
+                <div class="uk-accordion-content">
+                    <p>Bot information.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">patreon</a>
+                <div class="uk-accordion-content">
+                    <p>Want to support us? </p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title">check-premium</a>
+                <div class="uk-accordion-content">
+                    <p>Checks out premium subscription.</p>
+                </div>
+            </li>
+            <hr class="uk-divider-icon">
+
+        </ul>
+        <div class="uk-text-center uk-text-primary">
+            <p>Want help with the bot? <a href="https://discord.com/invite/mMp6Jp9pDk" class="uk-button uk-button-text" uk-icon="chevron-right">our discord</a>.</p>
+        </div>
+    </div>
+       
+
+    <!--
+           
+     
+    -->
+    <hr class="uk-divider-icon">
+
+    <div class="container">
+  
+        <p class="uk-text-center">Made with <span uk-icon="heart"></span> by arroi</p>
+    </div>
+    <script src="assets/uikit/js/uikit.min.js"></script>
+    <script src="assets/uikit/js/uikit-icons.js"></script>
+    <!-- Javascript uiKit-->
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+    <!-- JS -->
+</body>
+</html>
+</body>
+</html>
